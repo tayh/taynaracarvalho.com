@@ -12,7 +12,6 @@ export default createGlobalStyle`
     min-height: 100%;
   }
   body {
-    background: #eee;
     -webkit-font-smoothing: antialised !important;
   }
   button {
