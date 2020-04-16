@@ -5,6 +5,16 @@ import { Container } from './styles';
 export default function Main() {
   return (
     <Container>
+      <div className="card">
+        <h1>TAYNARA DE JESUS CARVALHO</h1>
+        <small>Software Engineering Stundent - UnB</small>
+        <br />
+        <small>Front-End Developer</small>
+        <br />
+
+        <small>Sometimes I do ML stuff</small>
+      </div>
+
       <svg
         className="hoho"
         width="1920"
@@ -35,6 +45,9 @@ export default function Main() {
           </g>
         </g>
       </svg>
+      <footer>
+        <span>Mady by: Tayh</span>
+      </footer>
     </Container>
   );
 }
