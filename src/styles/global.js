@@ -15,14 +15,14 @@ export default createGlobalStyle`
     user-select: none;
     font-family: 'Raleway', sans-serif;
     display: flex;
-    background: #f0f0f0;
+    background-color :  #202437;
   }
   .container {
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    margin-left: 10%;
+    margin-left: 2%;
     z-index: 1000;
   }
 

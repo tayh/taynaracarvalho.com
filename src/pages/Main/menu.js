@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export default function DraggableList({ items }) {
+export default function Menu({ items }) {
   return (
     <div className="container">
       <div className="content">Home</div>
