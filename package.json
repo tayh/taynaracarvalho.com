@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "lodash": "^4.17.15",
-    "lodash-es": "4.17.11",
-    "lodash-move": "1.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
@@ -33,7 +30,6 @@
     ]
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.155",
     "babel-eslint": "^10.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^17.1.0",
