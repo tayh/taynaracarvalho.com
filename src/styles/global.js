@@ -18,11 +18,12 @@ export default createGlobalStyle`
     background: #f0f0f0;
   }
   .container {
-    position: relative;
+    position: absolute;
     top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     margin-left: 10%;
+    z-index: 1000;
   }
 
   .content {
