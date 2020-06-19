@@ -24,8 +24,6 @@ export default createGlobalStyle`
     transform: translateY(-50%);
     margin-left: 2%;
     z-index: 1000;
-
-
   }
   .container a {
     text-decoration: none;
@@ -61,9 +59,26 @@ export default createGlobalStyle`
     background: #80bdab
   }
   .title {
-    padding-top: 100px;
-    padding-left: 100px;
-    width: 700px;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 600px;
     position: absolute;
+    z-index: 5;
+  }
+  .card {
+    width: 70%;
+    height: 50%;
+    background-color: #f5f5f5;
+    position: absolute;
+    z-index: 0;
+    margin-left: 20%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    border-width: thin;
+    color: white;
   }
 `;
