@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring';
 const AnimFeTurbulence = animated('feTurbulence');
 const AnimFeDisplacementMap = animated('feDisplacementMap');
 
-export default function Title({ d }) {
+export default function Title({ d, color }) {
   const [open] = useState(false);
   const { freq, scale, transform, opacity } = useSpring({
     reverse: open,
@@ -44,7 +44,7 @@ export default function Title({ d }) {
         </filter>
       </defs>
       <g filter="url(#water)">
-        <animated.path d={d} fill="lightblue" />
+        <animated.path d={d} fill={color} />
       </g>
     </animated.svg>
   );

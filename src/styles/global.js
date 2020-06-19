@@ -61,6 +61,8 @@ export default createGlobalStyle`
     background: #80bdab
   }
   .title {
+    padding-top: 100px;
+    padding-left: 100px;
     width: 700px;
     position: absolute;
   }
