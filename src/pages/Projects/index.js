@@ -1,7 +1,7 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import Main from '../Main/index';
 
 export default function Projects() {
-  return <h1>Projects</h1>;
+  return <Main />;
 }

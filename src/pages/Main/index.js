@@ -6,8 +6,8 @@ export default function Main() {
   useEffect(() => {
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
-    const colors = ['#69f0ae', '#1976D2', '#ff4081', '#FBD15B'];
-    const colorLine = '#FFFFFF';
+    const colors = ['#ff9595', '#342b38', '#80bdab', '#bbf1c8'];
+    const colorLine = '#3f3f44';
     const positions = 1;
 
     let H = window.innerHeight;
@@ -160,7 +160,7 @@ export default function Main() {
     window.addEventListener('resize', setCanvasSize, false);
   }, []);
   return (
-    <div>
+    <div className="fundo">
       <canvas id="canvas" />
       <Menu />
     </div>
