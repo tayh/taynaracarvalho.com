@@ -13,7 +13,7 @@ export default createGlobalStyle`
     width: 100%;
     overflow: hidden;
     user-select: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     background-color : #f5f5f5;
   }
@@ -65,9 +65,9 @@ export default createGlobalStyle`
     position: absolute;
     z-index: 5;
   }
-  .card {
+  .card-about {
     width: 70%;
-    height: 50%;
+    height: 45%;
     background-color: #f5f5f5;
     position: absolute;
     z-index: 0;
@@ -79,6 +79,28 @@ export default createGlobalStyle`
     border-style: solid;
     border-color: #e0e0e0;
     border-width: thin;
-    color: white;
+    padding-top: 50px;
+    padding-left: 60px;
+    text-align: center;
+  }
+  .card-about h1 {
+    color: #342b38;
+    font-size: 40px;
+  }
+  .card-about p {
+    font-size: 30px;
+    color: #393e46;
+  }
+  .card-about svg {
+    fill: #342b38;
+    padding-right: 10px;
+    text-align: center;
+  }
+  .card-about span {
+    display:inline-block;
+  }
+  .links {
+    padding-top: 50px;
+    text-align: center;
   }
 `;
