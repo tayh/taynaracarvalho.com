@@ -29,22 +29,23 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
-  .content {
-    width: 20em;
-    height: 5.625em;
-    overflow: visible;
-    pointer-events: auto;
-    border-radius: 5px;
-    color: white;
-    line-height: 90px;
-    padding-left: 32px;
-    font-size: 14.5px;
-    background: lightblue;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
+  @media only screen and (min-width: 768px) {
+    .content {
+      width: 20em;
+      height: 5.625em;
+      overflow: visible;
+      pointer-events: auto;
+      border-radius: 5px;
+      color: white;
+      line-height: 90px;
+      padding-left: 32px;
+      font-size: 14.5px;
+      background: lightblue;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
   }
-
   .content a {
     text-decoration: none;
   }
@@ -58,12 +59,24 @@ export default createGlobalStyle`
   .content.content-projects {
     background: #80bdab
   }
-  .title {
-    margin-top: 100px;
-    margin-left: 100px;
-    width: 600px;
-    position: absolute;
-    z-index: 5;
+
+  @media only screen and (max-width: 600px) {
+    .title {
+      margin-top: 10%;
+      margin-left: 5%;
+      width: 350px;
+      position: absolute;
+      z-index: 5;
+    }
+  }
+  @media only screen and (min-width: 600px){
+    .title {
+      margin-top: 100px;
+      margin-left: 100px;
+      width: 600px;
+      position: absolute;
+      z-index: 5;
+    }
   }
   .card-about {
     width: 70%;
@@ -79,8 +92,6 @@ export default createGlobalStyle`
     border-style: solid;
     border-color: #e0e0e0;
     border-width: thin;
-    padding-top: 50px;
-    padding-left: 60px;
     text-align: center;
   }
   .card-about h1 {
@@ -88,7 +99,7 @@ export default createGlobalStyle`
     font-size: 40px;
   }
   .card-about p {
-    font-size: 30px;
+    font-size: 25px;
     color: #393e46;
   }
   .card-about svg {

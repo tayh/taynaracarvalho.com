@@ -29,7 +29,7 @@ export default function Title({ d, color }) {
           <AnimFeTurbulence
             type="fractalNoise"
             baseFrequency={freq}
-            numOctaves="1.5"
+            numOctaves="1.0"
             result="TURB"
             seed="8"
           />
