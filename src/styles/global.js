@@ -17,19 +17,18 @@ export default createGlobalStyle`
     display: flex;
     background-color : #f5f5f5;
   }
-  .container {
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-left: 2%;
-    z-index: 1000;
-  }
-  .container a {
-    text-decoration: none;
-  }
-
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
+    .container {
+      position: absolute;
+      margin-left: 2%;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+    .container a {
+      text-decoration: none;
+    }
     .content {
       width: 20em;
       height: 5.625em;
@@ -45,19 +44,50 @@ export default createGlobalStyle`
       letter-spacing: 2px;
       margin-bottom: 5px;
     }
-  }
-  .content a {
-    text-decoration: none;
+    .content a {
+      text-decoration: none;
+    }
+
+    .content.content-home {
+      background: #342b38
+    }
+    .content.content-about {
+      background: #ff9595
+    }
+    .content.content-projects {
+      background: #80bdab
+    }
   }
 
-  .content.content-home {
-    background: #342b38
-  }
-  .content.content-about {
-    background: #ff9595
-  }
-  .content.content-projects {
-    background: #80bdab
+  @media only screen and (max-width: 768px) {
+    .container {
+      position: absolute;
+      z-index: 1000;
+      bottom: 0;
+      width: 100%;
+      padding: 20px 20px 20px;
+      flex: 1;
+      float: left;
+    }
+    .container a {
+      text-decoration: none;
+    }
+    .content {
+      display: inline;
+    }
+    .content a {
+      text-decoration: none;
+    }
+
+    .content.content-home {
+      background: #342b38;
+    }
+    .content.content-about {
+      background: #ff9595
+    }
+    .content.content-projects {
+      background: #80bdab
+    }
   }
 
   @media only screen and (max-width: 600px) {
