@@ -17,7 +17,7 @@ export default createGlobalStyle`
     display: flex;
     background-color : #f5f5f5;
   }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 768px) {
     .container {
       position: absolute;
       margin-left: 2%;
@@ -62,23 +62,20 @@ export default createGlobalStyle`
   @media only screen and (max-width: 768px) {
     .container {
       position: absolute;
-      z-index: 1000;
       bottom: 0;
       width: 100%;
-      padding: 20px 20px 20px;
-      flex: 1;
-      float: left;
-    }
-    .container a {
-      text-decoration: none;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      margin: 0;
     }
     .content {
-      display: inline;
+      float:left;
+      width:33.33%;
+      padding: 1em 1em 1em 1em;
+      text-align: center;
+      color: #f5f5f5;
     }
-    .content a {
-      text-decoration: none;
-    }
-
     .content.content-home {
       background: #342b38;
     }
@@ -90,7 +87,7 @@ export default createGlobalStyle`
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .title {
       margin-top: 10%;
       margin-left: 5%;
@@ -99,7 +96,7 @@ export default createGlobalStyle`
       z-index: 5;
     }
   }
-  @media only screen and (min-width: 600px){
+  @media only screen and (min-width: 768px){
     .title {
       margin-top: 100px;
       margin-left: 100px;
